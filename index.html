@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>CodePen - Instagram Bio Link tree</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700&display=swap');
+         body {
+         font-family: 'Darker Grotesque', sans-serif;
+         }
+         body {
+         margin: 0;
+         padding: 15px;
+         background-color: #161616;
+         }
+         .wrap {
+         width: 100%;
+         max-width: 320px;
+         margin: 0 auto;
+         }
+         .profile {
+         text-align: center;
+         color: #FFF;
+         }
+         .photo {
+         border-radius: 50%;
+         width: 80px;
+         height: 80px;
+         }
+         .profile_name {
+         font-weight: bold;
+         display: block;
+         }
+         .at {
+         font-size: 13px;
+         }
+         .links ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         }
+         .links ul li {
+         margin: 14px 0;
+         }
+         .link {
+         padding: 14px;
+         display: block;
+         background-color: #B3EE51;
+         text-align: center;
+         text-decoration: none;
+         border-radius: 40px;
+         transition: ease all 0.3s;
+         color: #161616;
+         }
+         .link:hover {
+         background-color: transparent;
+         border: 1px solid #B3EE51;
+         text-align: center;
+         color: #B3EE51;;
+         }
+         .card {
+         padding: 10px;
+         background-color: #FFF;
+         border-radius: 4px;
+         }
+         .card h3 {
+         margin: 0;
+         color: #202024;
+         }
+         .card p {
+         margin: 5px 0;
+         font-size: 13px;
+         color: #202024;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <div class="wrap">
+         <div class="profile">
+            <img src="https://imgpile.com/images/9S3YZh.jpg" class="photo">
+            <span class="profile_name">Ahmad Mukhtar</span>
+            <span class="at">0322 5685846</span>
+         </div>
+         <div class="links">
+            <ul>
+               <!--   <li><a href="#" class="link">Twitter</a></li> -->
+               <li><a href="https://t.me/mrahmadmukhtar002" class="link"><i class="fab fa-telegram"></i> Telegram </a></li>
+               <li><a href="https://wa.me/923225685846?text=Assalamualaikum" class="link"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+               <li><a href="https://instagram.com/mrahmadmukhtar?igshid=ZGUzMzM3NWJiOQ==" class="link"><i class="fab fa-instagram"></i> Instagram</a></li>
+               <li><a href="https://twitter.com/mrahmadmukhtar" class="link"><i class="fab fa-twitter"></i>  Twitter</a></li>
+               <li><a href="https://ahmadmukhtar.nicepage.io/Home.html#" class="link"><i class="fas fa-mobile-alt"></i> My website</a></li>
+            </ul>
+            <div class="card">
+               <h3>Dear users,</h3>
+               <p> <p class="vpn" style=" color: red;">*Please use VPN while using telegram.</p>
+                  For any inquiries or concerns, feel free to reach out via the provided handles. If you encounter any issues, you can also email me at <a href="mailto:mrahmadmukhtar@gmail.com?subject=Subject%20of%20the%20email&body=Dear%20Mr.%20Ahmad%2C%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%0D%0A%0D%0ABest%20regards%2C%0D%0A[Your%20Name]">mrahmadmukhtar@gmail.com</a>
+               </p>
+            </div>
+         </div>
+      </div>
+  
+      
+      <script>
+      
+  
+document.addEventListener('DOMContentLoaded', function() {
+  var internalLinks = document.querySelectorAll('a[href^="#"]');
+  for (var i = 0; i < internalLinks.length; i++) {
+    internalLinks[i].addEventListener('click', smoothScroll);
+  }
+});
+
+// Smooth scroll to the target element
+function smoothScroll(e) {
+  e.preventDefault();
+  var targetId = this.getAttribute('href').slice(1);
+  var target = document.getElementById(targetId);
+
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
+</script>
+   </body>
+</html>
