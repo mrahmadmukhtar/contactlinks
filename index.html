@@ -5,165 +5,227 @@
    <title>Contact Links - MorphixMods</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-   
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+      
       body {
-         font-family: 'Darker Grotesque', sans-serif;
-         margin: 0;
-         padding: 15px;
-         background-color: #f0f0f0;
+        font-family: 'Space Grotesk', sans-serif;
+        margin: 0;
+        padding: 15px;
+        background-image: url('https://i.ibb.co/KwZHbFb/b35eca81a14c27a30050c1cb2e151044.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
       }
       
+      
+      .parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
       .container {
-         max-width: 360px;
-         margin: 0 auto;
-         padding: 20px;
-         border: 1px solid #ddd;
-         border-radius: 5px;
-         background-color: #fff;
+        max-width: 360px;
+        width: 100%;
+        padding: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #FFD600; /* Yellow text */
       }
       
       .profile {
-         text-align: center;
-         color: #212121;
+        text-align: center;
       }
       
       .photo {
-   border-radius: 50%;
-   width: 80px;
-   height: 80px;
-   display: block;
-   margin: 0 auto;
-}
-
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+      }
+      .epphoto {
+        border-radius: 0%;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+      }
       
       .profile_name {
-         font-weight: bold;
-         font-size: 16px;
-         margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
       }
       
       .at {
-         font-size: 13px;
-         color: #777;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
       }
       
       .download-links {
-         display: flex;
-         justify-content: space-evenly;
-         margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
       }
       
       .download-button {
-         padding: 10px 25px;
-         background-color: #7024EC;
-         color: #FFFFFF;
-         text-align: center;
-         text-decoration: none;
-         border-radius: 40px;
-         transition: ease all 0.3s;
-         border: none;
-         cursor: pointer;
-         font-family: 'Space Grotesk', sans-serif;
+        margin: 10px;
+        padding: 12px 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #FFD600; /* Yellow button text */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: ease all 0.3s;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        font-weight: normal;
+        letter-spacing: 1px;
+        display: inline-block;
       }
       
       .download-button:hover {
-         background-color: #000000;
+        background-color: rgba(255, 255, 255, 0.4);
       }
       
       .modded-by {
-   text-align: center;
-   font-size: 12px;
-   color: #000000;
-   margin-top: 10px;
-   background-color: rgb(255, 208, 0);
-   border-radius: 40px; /* Adjust the value to set the background border radius */
-   padding: 8px; /* Adjust the value to set the size of the background */
-   font-family: 'Space Grotesk', sans-serif;
-   font-weight: bold;
-}
-
-
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
       
       .links-list {
-         list-style: none;
-         padding: 0;
-         margin-top: 40px;
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
       }
       
       .link-item {
-         margin: 14px 0;
+        margin: 14px 0;
       }
       
       .link {
-         display: block;
-         text-align: center;
-         text-decoration: none;
-         padding: 14px;
-         background-color: #000000;
-         border-radius: 40px;
-         transition: ease all 0.3s;
-         color: #FFD600;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        transition: ease all 0.3s;
+        color: #FFD600; /* Yellow button text */
+        font-weight: normal;
+        letter-spacing: 1px;
       }
       
       .link:hover {
-         background-color: transparent;
-         border: 1px solid #000000;
-         color: #000000;
+        background-color: rgba(255, 255, 255, 0.4);
       }
       
       .stay-connected {
-         text-align: center;
-         font-family: 'Space Grotesk', sans-serif;
-         font-size: 18px;
-         margin-top: 40px;
-         color: #777;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 40px;
+        color: #FFD600; /* Yellow text */
       }
+      
+     
+   /* Existing styles... */
 
-      .wrap {
-   width: 100%;
-   max-width: 320px;
-   margin: 0 auto;
-   padding: 20px;
-   border: 1px dotted red;
-   border-radius: 10px;
-   background-color: #FFFFFF;
-}
-
+   .wrap {
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      justify-content: center; /* Horizontally center the container */
+      align-items: center; /* Vertically center the container */
+      min-height: 100vh; /* Add this to center the container vertically on the whole page */
+   }
    </style>
 </head>
-<body>
-    <div class="wrap">
-   <div class="container">
-      <div class="profile">
-         <img alt="" src="https://i.ibb.co/s3tw3xz/new-logo-jazz.png" class="photo" />
-         <br>
-         <span class="profile_name">JazzCash Modded v9.0.54</span><br>
-         <span class="at">Please choose website to download:</span>
-      </div>
-      <div class="download-links">
-         <a href="https://www.mediafire.com/file/zbb1zuuom7uernr/JazzCash_9054_Free_Reduced_Optimized_MorfixMods.apk/file" class="download-button" id="mediafire-button">MediaFire</a>
-         <a href="https://apkadmin.com/zvxo6ngob6db/JazzCash_9054_Free_Reduced_Optimized_MorfixMods.apk.html" class="download-button" id="apkadmin-button">ApkAdmin</a>
-      </div>
-   <div><br></div>
-      <p class="modded-by">Modded by MorphixMods</p>
-      <div><br></div>
-      <hr>
-      <ul class="links-list">
-        <p class="stay-connected">🔗 Stay connected:</p>
-         <li class="link-item"><a href="https://t.me/MorphixMods" class="link"><i class="fab fa-telegram"></i> Telegram Channel</a></li>
-         <li class="link-item"><a href="https://wa.me/923326098143?text=Assalamualaikum," class="link"><i class="fab fa-whatsapp"></i> WhatsApp DM</a></li>
-         <li class="link-item"><a href="https://chat.whatsapp.com/Lm8cFUasnhf6KpxlQoHRmq" class="link"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
-      </ul>
-     
-   </div>
 
+<body>
+    <div class="parallax"></div>
+    <div class="wrap">
+       <div class="container">
+          <div class="profile">
+             <img alt="" src="https://i.ibb.co/s3tw3xz/new-logo-jazz.png" class="photo" />
+             <br>
+             <span class="profile_name">JazzCash Modded v9.0.54</span><br>
+             <span class="at">Please choose a website to download:</span>
+          </div>
+          <div class="download-links">
+             <a href="https://www.mediafire.com/file/zbb1zuuom7uernr/JazzCash_9054_Free_Reduced_Optimized_MorfixMods.apk/file" class="download-button" id="mediafire-button">MediaFire</a>
+             <a href="https://apkadmin.com/zvxo6ngob6db/JazzCash_9054_Free_Reduced_Optimized_MorfixMods.apk.html" class="download-button" id="apkadmin-button">ApkAdmin</a>
+          </div>
+          <div><br></div>
+    
+          <hr>
+          <br>
+          <!--2nd app section below-->
+          <div class="profile">
+             <img alt="" src="https://i.ibb.co/jzY8mdN/icon.png" class="epphoto" />
+             <br>
+             <span class="profile_name">Easypaisa 2.8.7</span><br>
+             <span class="at">Please choose desired item to download:</span>
+          </div>
+          <div class="download-links">
+             <a href="assets/MorphixMods_Easypaisa_2.8.7.apk" download class="download-button" id="mediafire-button"><i class="fi fi-ts-file-download"></i> Easypaisa APK</a>
+
+             <a href="https://www.mediafire.com/file/40svva1f9v5gmyf/Easypaisa_2.8.7_MorphixMods.settings/file" download class="download-button" id="apkadmin-button">
+              <i class="fi fi-ts-api"></i> Settings File
+            </a>
+            
+          </div>
+          <br>
+<hr>
+<br>
+          <p class="modded-by"><i class="fi fi-rr-info"></i> Modded by MorphixMods</p>
+
+          <ul class="links-list">
+            <p class="stay-connected">🔗 Stay connected:</p>
+             <li class="link-item"><a href="https://t.me/MorphixMods" class="link"><i class="fab fa-telegram"></i> Telegram Channel</a></li>
+             <li class="link-item"><a href="https://wa.me/923326098143?text=Assalamualaikum," class="link"><i class="fab fa-whatsapp"></i> WhatsApp DM</a></li>
+             <li class="link-item"><a href="https://chat.whatsapp.com/Lm8cFUasnhf6KpxlQoHRmq" class="link"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
+          </ul>
+      </div>
     </div>
+
+    
+
 </body>
 </html>
