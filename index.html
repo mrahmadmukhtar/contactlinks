@@ -329,8 +329,12 @@
 <hr> -->
 
 
+<center>
 
+<p>This page has been visited <span id="visitCount">0</span> times since 5:45 pm
+Tuesday, 8 August 2023.</p>
 
+</center>
 
           <p class="modded-by"><i class="fi fi-rr-info"></i> MorphixMods</p>
 
@@ -347,6 +351,23 @@
 
 
     <script>
+
+        // Load the count from local storage or initialize it to 0
+        var visitCount = parseInt(localStorage.getItem("visitCount")) || 0;
+
+        // Increment the visit count and update the local storage
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+
+        // Display the visit count on the page
+        window.onload = function() {
+            var visitCountElement = document.getElementById("visitCount");
+            if (visitCountElement) {
+                visitCountElement.textContent = visitCount;
+            }
+        };
+
+       
       // Create a favicon element
       var favicon = document.createElement('link');
       favicon.rel = 'icon';
