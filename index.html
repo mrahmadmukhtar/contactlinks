@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,198 +26,170 @@
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
       
-      body {
-        font-family: 'Space Grotesk', sans-serif;
-        margin: 0;
-        padding: 15px;
-       /* background-image: url('https://i.ibb.co/KwZHbFb/b35eca81a14c27a30050c1cb2e151044.jpg'); */
-     background-image: url('https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80');
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
- 
- 
- 
-       background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-      }
-      
-      
-      .parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #E1FD74;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-      .container {
-        max-width: 360px;
-        width: 100%;
-        padding: 20px;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.15);
-        color: #FFD600; /* Yellow text */
-      }
-      
-      .profile {
-        text-align: center;
-      }
-      
-      .photo {
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: 0 auto;
-      }
-      .epphoto {
-        border-radius: 0%;
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: 0 auto;
-      }
-      
-      .profile_name {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 5px;
-      }
-      
-      .at {
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.8);
-      }
-      
-      .download-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 30px;
-      }
-      
-      .download-button {
-        margin: 10px;
-        padding: 12px 30px;
-        background-color: rgba(255, 255, 255, 0.3);
-        color: #FFD600; /* Yellow button text */
-        text-align: center;
-        text-decoration: none;
-        border-radius: 30px;
-        transition: ease all 0.3s;
-        border: 2px solid rgba(255, 255, 255, 0.4);
-        cursor: pointer;
-        font-weight: normal;
-        letter-spacing: 1px;
-        display: inline-block;
-      }
-      
-      .download-button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-      }
-      
-      .modded-by {
-        text-align: center;
-        font-size: 14px;
-        margin-top: 20px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 30px;
-        padding: 10px;
-        font-weight: bold;
-        letter-spacing: 1px;
-      }
-      
-      .links-list {
-        list-style: none;
-        padding: 0;
-        margin-top: 40px;
-      }
-      
-      .link-item {
-        margin: 14px 0;
-      }
-      
-      .link {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        padding: 12px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 30px;
-        transition: ease all 0.3s;
-        color: #FFD600; /* Yellow button text */
-        font-weight: normal;
-        letter-spacing: 1px;
-      }
-      
-      .link:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-      }
-      
-      .stay-connected {
-        text-align: center;
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 40px;
-        color: #FFD600; /* Yellow text */
-      }
-      
-     
-   /* Existing styles... */
+.container {
+  max-width: 360px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(18, 18, 18, 0.2);
+  border-radius: 10px;
+  background-color: rgba(18, 18, 18, 0.9);
+  color: #E1FD74;
+}
 
-   .wrap {
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      display: flex;
-      justify-content: center; /* Horizontally center the container */
-      align-items: center; /* Vertically center the container */
-      min-height: 100vh; /* Add this to center the container vertically on the whole page */
-   }
+.profile {
+  text-align: center;
+}
 
-     .contact-line {
-            background-color: yellow;
-            color: black;
-            padding: 30px;
-            text-align: center;
-        }
+.photo,
+.epphoto {
+  border-radius: 0%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
 
-        .custom-button {
-            display: inline-block;
-            background-color: black;
-            color: yellow;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-        }
+.profile_name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 
-        .custom-button:hover {
-            background-color: yellow;
-            color: black;
-            border: 1px solid black;
-        }
-        
-        .ZINDIGI-load-caution {
-            text-align: center;
-            color: #FF3333;
-            font-size: 12px;
-        }
+.at {
+  font-size: 14px;
+  color: rgba(225, 253, 116, 0.8);
+}
+
+.download-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.download-button {
+  margin: 10px;
+  padding: 12px 30px;
+  background-color: #E1FD74;
+  color: #121212;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: ease all 0.3s;
+  border: 0px solid rgba(18, 18, 18, 0.4);
+  cursor: pointer;
+  font-weight: normal;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.download-button:hover {
+  background-color: #121212;
+  color: #E1FD74;
+}
+
+.modded-by {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  background-color: rgba(18, 18, 18, 0.3);
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #E1FD74;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.link-item {
+  margin: 14px 0;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  background-color: rgba(18, 18, 18, 0.3);
+  border-radius: 30px;
+  transition: ease all 0.3s;
+  color: #E1FD74;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.link:hover {
+  background-color: rgba(18, 18, 18, 0.4);
+}
+
+.stay-connected {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #E1FD74;
+}
+
+.wrap {
+  border-radius: 10px;
+  background-color: rgba(18, 18, 18, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-line {
+  background-color: #E1FD74;
+  color: #121212;
+  padding: 30px;
+  text-align: center;
+}
+
+.custom-button {
+  display: inline-block;
+  background-color: #121212;
+  color: #E1FD74;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #E1FD74;
+  color: #121212;
+  border: 1px solid #121212;
+}
+
+.ZINDIGI-load-caution {
+  text-align: center;
+  color: #ff6969;
+  font-size: 12px;
+}
+
    </style>
 </head>
 
@@ -333,7 +307,7 @@
 <!-- ... (Remaining code) ... -->
 
           <div class="profile">
-             <img alt="" src="https://i.ibb.co/s3tw3xz/new-logo-jazz.png" class="photo" />
+             <img alt="" src="https://i.ibb.co/tYc2dG5/logo-round-png.png" class="photo" />
              <br>
              <span class="profile_name">JazzCash Modded v9.0.54</span><br>
              <span class="at">Please choose a website to download:</span>
