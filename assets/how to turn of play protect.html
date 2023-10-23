@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Protect Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #ffffff;
+            color: #47ff85;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #tutorial-container {
+            text-align: center;
+            background-color: #001a47;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #tutorial-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #47ff85;
+            border-radius: 5px;
+        }
+
+        #instructions {
+            margin-top: 20px;
+        }
+
+        #download-button {
+            background-color: #47ff85;
+            color: #001a47;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #download-button:hover {
+            background-color: transparent;
+            border: 1px solid #47ff85;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="tutorial-container" class="bg-white text-47ff85 p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4">How to Turn Off Play Protect</h1>
+        <img id="tutorial-image" src="https://i.ibb.co/pjXSxMf/how-to-turn-off-play-protect.png" alt="Play Protect Tutorial" class="border-2 border-47ff85 rounded-lg">
+        <div id="instructions" class="mt-6 text-left text-lg">
+            <p class="mb-2"><strong>Follow these steps to turn off Play Protect:</strong></p>
+            <ol class="list-decimal pl-6">
+                <li class="mb-2">Open the Google Play Store app on your device.</li>
+                <li class="mb-2">Tap the three horizontal lines in the top-left corner to open the menu.</li>
+                <li class="mb-2">Select "Play Protect."</li>
+                <li class="mb-2">Tap the gear icon in the top-right corner to access settings.</li>
+                <li class="mb-2">Toggle off the "Scan apps with Play Protect" option.</li>
+            </ol>
+        </div>
+        <a id="download-button" href="https://i.ibb.co/pjXSxMf/how-to-turn-off-play-protect.png" download="play-protect.png" class="mt-6 inline-block px-6 py-2 rounded-lg bg-47ff85 hover:bg-35cc6b text-001a47">Download Image</a>
+    </div>
+</body>
+</html>
