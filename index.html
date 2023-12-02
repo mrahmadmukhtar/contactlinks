@@ -215,33 +215,116 @@ body {
  }
  
 
+
+ @keyframes breathing {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.breathing-alert {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px;
+    animation: breathing 3s infinite;
+}
+
+.breathing-alert::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 0.5px solid #f10000; /* Neon red color */
+    border-radius: 8px;
+    z-index: -1;
+}
+
+h2 {
+    color: red;
+    display: inline-block; /* Ensure proper rendering with the ::before pseudo-element */
+}
+
+.telegram-button,
+.email-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-button {
+    background-color: #008CBA;
+}
+
+.telegram-button:hover,
+.email-button:hover {
+    background-color: #45a049;
+}
+
+
    </style>
 </head>
 
 <body>
+
+
     <div class="parallax"></div>
     <div class="wrap">
        <div class="container">
 
+<center>
+      
+        <!-- Alert Section -->
+<div class="breathing-alert">
 
 
-            <!--App Cloner 2.7.1 app section below-->
+
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+  <dotlottie-player
+      src="https://lottie.host/94c1b586-7a47-4616-81f5-bcebf08577ce/t27DD5sAhp.json"
+      background="transparent"
+      speed="1"
+      style="width: 150px; height: 150px;" loop autoplay ></dotlottie-player>
+  
+
+  <h2 style="color: #E3FE76;">Alert!!</h2>
+  <p>
+    My primary WhatsApp number, +923326098143, has been banned for unknown reasons. Please be patient as I work towards its restoration. For any communication in the meantime, kindly reach out via email at morphixmods@gmail.com, as contact through WhatsApp is currently not possible.
+  </p>
+
+  <!-- Contact Buttons -->
+  <a href="mailto:morphixmods@gmail.com" class="download-button">
+    Contact via Email
+</a>
+
+ 
+</div>
+</center>
+
+<br><hr>
+<!-- App Cloner 2.7.1 app section below -->
 <div class="profile">
   <img alt="" src="https://i.ibb.co/yWbtZ6G/web-hi-res-512.png" class="epphoto" />
   <br>
   <span class="profile_name">App Cloner <br><div class="version">Version: 2.7.1</div></span>
   <span class="at">
       <ul style="list-style-type:none; padding-left: 0; color: white;" >
-        <li style="margin-bottom: 10px;">Removed Join Telegram Dialog</li>
-        <li style="margin-bottom: 10px;">Working till android 11 only.</li>
-        <li style="margin-bottom: 10px;">Premium Unlocked</li>
-  <li style="margin-bottom: 10px;">Updated UI&Fonts</li>
- 
-  
- 
-</ul>              
-     <span class="at">Download it below: <br class="arrow">↓</span>
-</div>
+          <li style="margin-bottom: 10px;">Removed Join Telegram Dialog</li>
+          <li style="margin-bottom: 10px;">Working till android 11 only.</li>
+          <li style="margin-bottom: 10px;">Premium Unlocked</li>
+          <li style="margin-bottom: 10px;">Updated UI & Fonts</li>
+      </ul>              
+      <span class="at">Download it below: <br class="arrow">↓</span>
+  </div>
+
+
+           
+        
 <div class="download-links">
     
  <!---
