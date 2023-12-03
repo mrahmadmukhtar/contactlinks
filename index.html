@@ -216,30 +216,20 @@ body {
  
 
 
- @keyframes breathing {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+
 
 .breathing-alert {
     position: relative;
     padding: 15px;
-    margin-bottom: 20px;
-    animation: breathing 3s infinite;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px dotted #E3FE76;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    animation: breathing 0s infinite;
 }
 
-.breathing-alert::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    border: 0.5px solid #f10000; /* Neon red color */
-    border-radius: 8px;
-    z-index: -1;
-}
 
 h2 {
     color: red;
@@ -282,24 +272,19 @@ h2 {
 <div class="breathing-alert">
 
 
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/5ffdceab-0050-42c4-b2de-4296ce9ac630/5BTD5cSPGN.json" background="transparent" speed="1" style="width: 250px; height: 250px" direction="1" mode="normal" loop autoplay></dotlottie-player>
 
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
-  <dotlottie-player
-      src="https://lottie.host/94c1b586-7a47-4616-81f5-bcebf08577ce/t27DD5sAhp.json"
-      background="transparent"
-      speed="1"
-      style="width: 150px; height: 150px;" loop autoplay ></dotlottie-player>
-  
 
   <h2 style="color: #E3FE76;">Alert!!</h2>
   <p>
-    My primary WhatsApp number, +923326098143, has been banned for unknown reasons. Please be patient as I work towards its restoration. For any communication in the meantime, kindly reach out via email at morphixmods@gmail.com, as contact through WhatsApp is currently not possible.
+    My primary WhatsApp number, +923326098143, has been banned for unknown reasons. Please be patient as I work towards its restoration. For any communication in the meantime, kindly reach out via email at morphixmods@gmail.com, or Telegram @imorphix, as contact through WhatsApp is currently not possible.
   </p>
 
   <!-- Contact Buttons -->
-  <a href="mailto:morphixmods@gmail.com" class="download-button">
-    Contact via Email
+  <a href="mailto:morphixmods@gmail.com" class="download-button"><i class="fi fi-rs-at"></i> Contact via Email
+</a>
+<a href="https://www.telegram.me/imorphix" class="download-button"><i class="fi fi-brands-telegram"></i> Contact via Telegram
 </a>
 
  
