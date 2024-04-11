@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Selling Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <style>
+        body {
+            font-family: 'Google Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #121212;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+  
+h1 {
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the font bold */
+    color: #00ffaf; /* Set the text color */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    animation: moveText 3s infinite alternate ease-in-out; /* Apply animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+@keyframes moveText {
+    from {
+        transform: translateY(0); /* Initial position */
+    }
+    to {
+        transform: translateY(-3px); /* Move slightly upward */
+    }
+}
+
+
+  
+  .subheading {
+    font-size: 16px;
+    margin-top: 2px;
+    color: #fff;
+    border: 1px solid #00ffaf;
+    border-radius: 10px;
+    padding: 10px 10px; /* Padding added for space between text and border */
+    margin-bottom: 10px; /* Adding margin-bottom for extra spacing */
+}
+
+  
+  
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+.card img {
+    width: 100%; /* Set the width */
+    height: 160px; /* Set the height */
+    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+        .card-content {
+            padding: 20px;
+        }
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .price {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #121212;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .btn-container a.btn {
+    text-decoration: none;
+}
+
+        .btn {
+            background-color: #121212;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: width 0.3s ease, height 0.3s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .btn:hover::before {
+            width: 0;
+            height: 0;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .btn span {
+            position: relative;
+            z-index: 1;
+        }
+        
+   
+        
+             /* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.dark-mode-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #555;
+}
+  /* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .subheading {
+  color: #fff;
+  border-color: #00ffaf;
+}
+
+.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .btn {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode .btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+  
+   
+    .morphixmods-link {
+    color: #0000EE; /* Change color if needed */
+    text-decoration: underline; /* Optionally add underline */
+}
+ 
+    </style>
+</head>
+<body>
+<!-- Dark Mode Toggle Button -->
+<div class="dark-mode-toggle">
+  <button class="dark-mode-button" onclick="toggleDarkMode()">
+    🌙
+  </button>
+</div>
+
+    <header>
+        <h1>Guddo Digital Services</h1>
+        <p class="subheading">‘‘We provide various reliable services such as secure WhatsApp verifications, premium streaming access, and storage solutions. Buy with confidence knowing we prioritize reliability.’’</p>
+    </header>
+    <div class="container">
+    
+    
+    
+        <div class="card">
+            <img src="https://www.reuters.com/resizer/v2/USODFXWODBIKPLEZTN6ULBMTIA.jpg?auth=3f44e9a1877e557615ad9f45edd9ccd9a1ca07023d3a5f4f47ace33550ec5adb&width=1080&quality=80" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">+1 USA Number WhatsApp OTP</h2>
+                <p class="description">Secure and reliable USA phone numbers for WhatsApp verification.</p>
+                <p class="price">Price: RS - 180</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578973615934-8d9cdb0792b4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2FuYWRhfGVufDB8fDB8fHww" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">+1 CANADA Number WhatsApp OTP</h2>
+                <p class="description">Reliable Canadian phone numbers for WhatsApp verification.</p>
+                <p class="price">Price: RS - 170</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">AMAZON PRIME VIDEO SCREEN 1M</h2>
+                <p class="description">Access Amazon Prime Video with a single screen for one month.</p>
+                <p class="price">Price: RS - 150</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+                <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDvJhygHOMkBGUHcy74clfNiBn2LqDn6ngA&usqp=CAU" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">AMAZON PRIME VIDEO Full A/C 5 Screens 1080p 1M</h2>
+                <p class="description">Full account access to Amazon Prime Video for up to five screens at 1080p resolution..</p>
+                <p class="price">Price: RS - 350</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+                <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVJlpdQr1wr4YI4LrRieaatfD8CMQFrf-xhx45dZybgI-KpkU3Vyy5zE-&s=10" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">CANVA PRO INDIVIDUAL 1M</h2>
+                <p class="description">Canva Pro's individual plan offering advanced design tools for personal projects.</p>
+                <p class="price">Price: RS - 100</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+                <div class="card">
+            <img src="https://d2908q01vomqb2.cloudfront.net/e1822db470e60d090affd0956d743cb0e7cdf113/2023/05/04/brand-specific-template-for-a-canva-presentation-1024x595.png" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">CANVA PRO ADMIN PANEL 1M</h2>
+                <p class="description">Canva Pro's admin panel for team collaboration and professional design projects.</p>
+                <p class="price">Price: RS - 300</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/vA4tG0v4aasE7oIvRIvTkOYTwom07DfqHdUPr6k7jmrDwy_qA_SonqZkw6KX0OXKAdk" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">YOUTUBE PREMIUM INDIVIDUAL 1M</h2>
+                <p class="description">YouTube Premium's individual plan for ad-free viewing and access to YouTube.</p>
+                <p class="price">Price: RS - 130</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="card">
+            <img src="https://play-lh.googleusercontent.com/vA4tG0v4aasE7oIvRIvTkOYTwom07DfqHdUPr6k7jmrDwy_qA_SonqZkw6KX0OXKAdk" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">YOUTUBE PREMIUM FAMILY 5-SCREENS 1M</h2>
+                <p class="description">YouTube Premium's family plan for ad-free YouTube and YouTube Music access for up to five members.</p>
+                <p class="price">Price: RS - 250</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="https://techcrunch.com/wp-content/uploads/2015/06/soundcloud-money.jpg" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">SOUNDCLOUD GO + 1M</h2>
+                <p class="description">SoundCloud Go+ for ad-free listening and offline playback.</p>
+                <p class="price">Price: RS - 200</p>
+                <div class="btn-container">
+              
+                          <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+            
+                    </div>
+            </div>
+        </div>
+        
+        
+                
+        <div class="card">
+            <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/06/what-is-google-one-hero.jpg?q=50&fit=contain&w=480&h=&dpr=1.5" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">GOOGLE ONE 2TB PREMIUM AI 1M</h2>
+                <p class="description">Google One's premium AI-powered 2TB storage plan with advanced features.</p>
+                <p class="price">Price: RS - 170</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+                
+        <div class="card">
+            <img src="https://www.netans.com/wp-content/uploads/2022/11/Google-One.png" alt="Service Image">
+            <div class="card-content">
+                <h2 class="title">GOOGLE ONE 2TB PREMIUM AI 2M</h2>
+                <p class="description">Extend Google One's premium AI-powered 2TB storage plan for two months.</p>
+                <p class="price">Price: RS - 280</p>
+                <div class="btn-container">
+                    <div class="btn-container">
+    <a href="https://wa.me/+923243842094" target="_blank" class="btn"><span>Buy Now <i class="fi fi-ts-arrow-circle-right"></i></span></a>
+</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+                
+       <footer>
+    <p>&copy; 2024 <a href="https://mrahmadmukhtar.github.io/contactlinks/" class="morphixmods-link">MorphixMods</a></p>
+
+
+</footer>
+    </div>
+    
+    
+    <script>
+    
+    // JavaScript for Dark Mode Toggle
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
+
+    
+    
+    
+    </script>
+</body>
+</html>
