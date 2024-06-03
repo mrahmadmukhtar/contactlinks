@@ -399,17 +399,67 @@
                 justify-content: center; /* Center content horizontally */
                 margin: 10px;
                 border: 1px solid #000;
-                font-size: 16px;
+                font-size: 15px;
+
+
                 min-width: 200px; /* Fixed width for uniform button size */
                 box-sizing: border-box; /* Ensure padding is included in width */
             }
             .custom-button i {
                 margin-right: 8px;
             }
+            
+            
+            
+
+
+.custom-button i {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #00ffaf;
+    border-radius: 6px;
+}
+
+.dropdown-content button {
+    color: #00ffaf;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border-radius: 22px;
+    background: none;
+    text-align: left;
+    background-color: black;
+}
+
+.dropdown-content button:hover {
+    background-color: ;
+}
+
         </style>
         <div class="button-container">
             <a class="custom-button" href="https://whatsapp.com/channel/0029VaYpx0pGufIrWPrgx71O"><i class="material-icons">chat</i> WhatsApp Channel</a>
-            <a class="custom-button" href="https://chat.whatsapp.com/BF98dnj7A2WHVpQ6occxxW"><i class="material-icons">group</i> WhatsApp Group</a>
+            
+            
+
+           
+            
+             <a class="custom-button" id="dropdownButton"><i class="material-icons">group</i> WhatsApp Group</a>
+<div id="dropdownContent" class="dropdown-content">
+    <button onclick="joinGroup()"><i class="material-icons">group_add</i> Join Group</button>
+    <button onclick="copyLink()"><i class="material-icons">content_copy</i> Copy Group Link</button>
+</div>
+ 
+            
             <a class="custom-button" href="https://wa.link/oeb8va"><i class="material-icons">message</i> Message Me</a>
             <a class="custom-button" href="pages/GuddoServices.html"><i class="material-icons">miscellaneous_services</i> Other Services</a>
         </div>
@@ -1021,5 +1071,30 @@ groups
                     function closeDialog() {
                          document.getElementById("details-dialog").style.display = "none"
                     }
+                    
+                    document.getElementById("dropdownButton").onclick = function() {
+    var dropdown = document.getElementById("dropdownContent");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+};
+
+function joinGroup() {
+    window.location.href = "https://chat.whatsapp.com/BF98dnj7A2WHVpQ6occxxW";
+}
+
+function copyLink() {
+    var link = "https://chat.whatsapp.com/BF98dnj7A2WHVpQ6occxxW";
+    navigator.clipboard.writeText(link).then(function() {
+        alert("Group link copied to clipboard!");
+    }, function(err) {
+        console.error("Could not copy text: ", err);
+    });
+}
+
+                    
+                    
                </script>
           </div>
